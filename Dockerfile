@@ -16,4 +16,4 @@ COPY . .
 # Port du serveur (server.js) 
 EXPOSE 5000
 
-CMD [ "node" ,"server.js"]
+CMD [ "node" ,"server.js" , "myapp/build"]
