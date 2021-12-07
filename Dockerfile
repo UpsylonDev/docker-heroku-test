@@ -14,7 +14,7 @@ RUN npm install
 COPY . .
 
 # construit l'app pour la production en la minifiant
-RUN npm run myapp/build
+RUN npm run ./myapp/build
 
 # Port du serveur (server.js) 
 EXPOSE 5000
