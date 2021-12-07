@@ -13,7 +13,10 @@ RUN npm install
 # Copier les ficher de l'app dans le dossier de travail du container > /app
 COPY . .
 
+# construit l'app pour la production en la minifiant
+RUN npm run myapp/build
+
 # Port du serveur (server.js) 
 EXPOSE 5000
 
-CMD [ "node" ,"server.js" , "myapp/build"]
+CMD [ "node" ,"server.js"]
